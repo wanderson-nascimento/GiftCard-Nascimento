@@ -1,0 +1,40 @@
+type Query {
+  paymentsptas_giftcardprotocolexample_0_3_0_getGiftCardProviders: [paymentsptas_giftcardprotocolexample_0_3_0_GiftCardProvider] @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+}
+
+type Mutation {
+  paymentsptas_giftcardprotocolexample_0_3_0_setGiftCardProvider(id: String @from(app: "paymentsptas.giftcard-protocol-example@0.3.0"), giftCardProvInput: paymentsptas_giftcardprotocolexample_0_3_0_GiftCardProviderInput @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")): paymentsptas_giftcardprotocolexample_0_3_0_GiftCardProviderResponse @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+  paymentsptas_giftcardprotocolexample_0_3_0_deleteGiftCardProvider(id: String @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")): paymentsptas_giftcardprotocolexample_0_3_0_GiftCardProviderResponse @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+}
+
+type paymentsptas_giftcardprotocolexample_0_3_0_GiftCardProvider @from(app: "paymentsptas.giftcard-protocol-example@0.3.0") {
+  paymentsptas_giftcardprotocolexample_0_3_0_serviceUrl: String @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+  paymentsptas_giftcardprotocolexample_0_3_0_oauthProvider: String @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+  paymentsptas_giftcardprotocolexample_0_3_0_preAuthEnabled: Boolean @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+  paymentsptas_giftcardprotocolexample_0_3_0_cancelEnabled: Boolean @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+}
+
+input paymentsptas_giftcardprotocolexample_0_3_0_GiftCardProviderInput @from(app: "paymentsptas.giftcard-protocol-example@0.3.0") {
+  paymentsptas_giftcardprotocolexample_0_3_0_serviceUrl: String @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+  paymentsptas_giftcardprotocolexample_0_3_0_oauthProvider: String @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+  paymentsptas_giftcardprotocolexample_0_3_0_preAuthEnabled: Boolean @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+  paymentsptas_giftcardprotocolexample_0_3_0_cancelEnabled: Boolean @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+}
+
+type paymentsptas_giftcardprotocolexample_0_3_0_GiftCardProviderResponse @from(app: "paymentsptas.giftcard-protocol-example@0.3.0") {
+  paymentsptas_giftcardprotocolexample_0_3_0_serviceUrl: String @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+  paymentsptas_giftcardprotocolexample_0_3_0_oauthProvider: String @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+  paymentsptas_giftcardprotocolexample_0_3_0_preAuthEnabled: Boolean @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+  paymentsptas_giftcardprotocolexample_0_3_0_cancelEnabled: Boolean @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+  paymentsptas_giftcardprotocolexample_0_3_0_id: String @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+  paymentsptas_giftcardprotocolexample_0_3_0_caption: String @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+  paymentsptas_giftcardprotocolexample_0_3_0__self: paymentsptas_giftcardprotocolexample_0_3_0_Self @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+}
+
+input paymentsptas_giftcardprotocolexample_0_3_0_SelfInput @from(app: "paymentsptas.giftcard-protocol-example@0.3.0") {
+  paymentsptas_giftcardprotocolexample_0_3_0_href: String @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+}
+
+type paymentsptas_giftcardprotocolexample_0_3_0_Self @from(app: "paymentsptas.giftcard-protocol-example@0.3.0") {
+  paymentsptas_giftcardprotocolexample_0_3_0_href: String @from(app: "paymentsptas.giftcard-protocol-example@0.3.0")
+}

@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.deleteGiftCardProvider = void 0;
+const api_1 = require("@vtex/api");
+async function deleteGiftCardProvider(_, { id }, ctx) {
+    /*
+      This resolver is responsible for deleting a gift card provider
+      on an account by using GraphQL
+    */
+    const { clients: { giftCardHub }, vtex: { adminUserAuthToken: userToken }, } = ctx;
+    if (!userToken) {
+        throw new api_1.AuthenticationError('No authorization provided');
+    }
+    return giftCardHub.deleteGiftCardById(id, userToken);
+}
+exports.deleteGiftCardProvider = deleteGiftCardProvider;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVsZXRlR2lmdENhcmRQcm92aWRlci5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uL3NyYy9ub2RlL3Jlc29sdmVycy9kZWxldGVHaWZ0Q2FyZFByb3ZpZGVyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLG1DQUErQztBQUV4QyxLQUFLLFVBQVUsc0JBQXNCLENBQzFDLENBQVUsRUFDVixFQUFFLEVBQUUsRUFBZSxFQUNuQixHQUFZO0lBRVo7OztNQUdFO0lBRUYsTUFBTSxFQUNKLE9BQU8sRUFBRSxFQUFFLFdBQVcsRUFBRSxFQUN4QixJQUFJLEVBQUUsRUFBRSxrQkFBa0IsRUFBRSxTQUFTLEVBQUUsR0FDeEMsR0FBRyxHQUFHLENBQUE7SUFFUCxJQUFJLENBQUMsU0FBUyxFQUFFO1FBQ2QsTUFBTSxJQUFJLHlCQUFtQixDQUFDLDJCQUEyQixDQUFDLENBQUE7S0FDM0Q7SUFFRCxPQUFPLFdBQVcsQ0FBQyxrQkFBa0IsQ0FBQyxFQUFFLEVBQUUsU0FBUyxDQUFDLENBQUE7QUFDdEQsQ0FBQztBQXBCRCx3REFvQkMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBBdXRoZW50aWNhdGlvbkVycm9yIH0gZnJvbSAnQHZ0ZXgvYXBpJ1xuXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZGVsZXRlR2lmdENhcmRQcm92aWRlcihcbiAgXzogdW5rbm93bixcbiAgeyBpZCB9OiBEZWxldGVJbnB1dCxcbiAgY3R4OiBDb250ZXh0XG4pIHtcbiAgLypcbiAgICBUaGlzIHJlc29sdmVyIGlzIHJlc3BvbnNpYmxlIGZvciBkZWxldGluZyBhIGdpZnQgY2FyZCBwcm92aWRlclxuICAgIG9uIGFuIGFjY291bnQgYnkgdXNpbmcgR3JhcGhRTFxuICAqL1xuXG4gIGNvbnN0IHtcbiAgICBjbGllbnRzOiB7IGdpZnRDYXJkSHViIH0sXG4gICAgdnRleDogeyBhZG1pblVzZXJBdXRoVG9rZW46IHVzZXJUb2tlbiB9LFxuICB9ID0gY3R4XG5cbiAgaWYgKCF1c2VyVG9rZW4pIHtcbiAgICB0aHJvdyBuZXcgQXV0aGVudGljYXRpb25FcnJvcignTm8gYXV0aG9yaXphdGlvbiBwcm92aWRlZCcpXG4gIH1cblxuICByZXR1cm4gZ2lmdENhcmRIdWIuZGVsZXRlR2lmdENhcmRCeUlkKGlkLCB1c2VyVG9rZW4pXG59XG5cbmludGVyZmFjZSBEZWxldGVJbnB1dCB7XG4gIGlkOiBzdHJpbmdcbn1cbiJdfQ==

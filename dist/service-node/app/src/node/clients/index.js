@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Clients = void 0;
+const api_1 = require("@vtex/api");
+const giftCardHub_1 = require("./giftCardHub");
+const giftCardProvider_1 = require("./giftCardProvider");
+class Clients extends api_1.IOClients {
+    get giftCardHub() {
+        return this.getOrSet('giftCardHub', giftCardHub_1.GiftCardHub);
+    }
+    get giftCardProvider() {
+        return this.getOrSet('giftCardProvider', giftCardProvider_1.GiftCardProvider);
+    }
+}
+exports.Clients = Clients;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi8uLi9zcmMvbm9kZS9jbGllbnRzL2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLG1DQUFxQztBQUVyQywrQ0FBMkM7QUFDM0MseURBQXFEO0FBRXJELE1BQWEsT0FBUSxTQUFRLGVBQVM7SUFDcEMsSUFBVyxXQUFXO1FBQ3BCLE9BQU8sSUFBSSxDQUFDLFFBQVEsQ0FBQyxhQUFhLEVBQUUseUJBQVcsQ0FBQyxDQUFBO0lBQ2xELENBQUM7SUFFRCxJQUFXLGdCQUFnQjtRQUN6QixPQUFPLElBQUksQ0FBQyxRQUFRLENBQUMsa0JBQWtCLEVBQUUsbUNBQWdCLENBQUMsQ0FBQTtJQUM1RCxDQUFDO0NBQ0Y7QUFSRCwwQkFRQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IElPQ2xpZW50cyB9IGZyb20gJ0B2dGV4L2FwaSdcblxuaW1wb3J0IHsgR2lmdENhcmRIdWIgfSBmcm9tICcuL2dpZnRDYXJkSHViJ1xuaW1wb3J0IHsgR2lmdENhcmRQcm92aWRlciB9IGZyb20gJy4vZ2lmdENhcmRQcm92aWRlcidcblxuZXhwb3J0IGNsYXNzIENsaWVudHMgZXh0ZW5kcyBJT0NsaWVudHMge1xuICBwdWJsaWMgZ2V0IGdpZnRDYXJkSHViKCkge1xuICAgIHJldHVybiB0aGlzLmdldE9yU2V0KCdnaWZ0Q2FyZEh1YicsIEdpZnRDYXJkSHViKVxuICB9XG5cbiAgcHVibGljIGdldCBnaWZ0Q2FyZFByb3ZpZGVyKCkge1xuICAgIHJldHVybiB0aGlzLmdldE9yU2V0KCdnaWZ0Q2FyZFByb3ZpZGVyJywgR2lmdENhcmRQcm92aWRlcilcbiAgfVxufVxuIl19

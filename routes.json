@@ -1,0 +1,79 @@
+{
+  "graphqlPrivate1": {
+    "handler": "vtex.graphql-server@1.x/graphql",
+    "headers": {},
+    "path": "/_v/private/graphql/v1",
+    "public": true,
+    "version": "0.1.0",
+    "releasedAt": 1677590797218
+  },
+  "graphqlPublic1": {
+    "handler": "vtex.graphql-server@1.x/graphql",
+    "headers": {},
+    "path": "/_v/public/graphql/v1",
+    "public": true,
+    "version": "0.1.0",
+    "releasedAt": 1677590797218
+  },
+  "graphqlSegment1": {
+    "handler": "vtex.graphql-server@1.x/graphql",
+    "headers": {},
+    "path": "/_v/segment/graphql/v1",
+    "public": true,
+    "version": "0.1.0",
+    "releasedAt": 1677590797218
+  },
+  "__graphql": {
+    "path": "/_v/graphql",
+    "version": "0.1.0",
+    "releasedAt": 1677590797218
+  },
+  "list": {
+    "path": "/my-provider/giftcards/_search",
+    "public": true,
+    "version": "0.1.0",
+    "releasedAt": 1677590797218
+  },
+  "create": {
+    "path": "/my-provider/giftcards",
+    "public": true,
+    "version": "0.1.0",
+    "releasedAt": 1677590797218
+  },
+  "get": {
+    "path": "/my-provider/giftcards/:id/",
+    "public": true,
+    "version": "0.1.0",
+    "releasedAt": 1677590797218
+  },
+  "transactions": {
+    "path": "/my-provider/giftcards/:giftCardId/transactions",
+    "public": true,
+    "version": "0.1.0",
+    "releasedAt": 1677590797218
+  },
+  "getTransaction": {
+    "path": "/my-provider/giftcards/:giftCardId/transactions/:id/",
+    "public": true,
+    "version": "0.1.0",
+    "releasedAt": 1677590797218
+  },
+  "authorization": {
+    "path": "/my-provider/giftcards/:giftCardId/transactions/:id/authorization",
+    "public": true,
+    "version": "0.1.0",
+    "releasedAt": 1677590797218
+  },
+  "cancellation": {
+    "path": "/my-provider/giftcards/:giftCardId/transactions/:id/cancellations",
+    "public": true,
+    "version": "0.1.0",
+    "releasedAt": 1677590797218
+  },
+  "settlement": {
+    "path": "/my-provider/giftcards/:giftCardId/transactions/:id/settlements",
+    "public": true,
+    "version": "0.1.0",
+    "releasedAt": 1677590797218
+  }
+}

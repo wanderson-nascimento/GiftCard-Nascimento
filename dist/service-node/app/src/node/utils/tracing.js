@@ -1,0 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createTracing = void 0;
+exports.createTracing = (metric, tracingConfig) => ({
+    requestSpanNameSuffix: metric,
+    ...tracingConfig === null || tracingConfig === void 0 ? void 0 : tracingConfig.tracing,
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidHJhY2luZy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uLy4uLy4uL3NyYy9ub2RlL3V0aWxzL3RyYWNpbmcudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBRWEsUUFBQSxhQUFhLEdBQUcsQ0FDM0IsTUFBYyxFQUNkLGFBQW9DLEVBQ3BDLEVBQUUsQ0FBQyxDQUFDO0lBQ0oscUJBQXFCLEVBQUUsTUFBTTtJQUM3QixHQUFHLGFBQWEsYUFBYixhQUFhLHVCQUFiLGFBQWEsQ0FBRSxPQUFPO0NBQzFCLENBQUMsQ0FBQSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFJlcXVlc3RUcmFjaW5nQ29uZmlnIH0gZnJvbSAnQHZ0ZXgvYXBpJ1xuXG5leHBvcnQgY29uc3QgY3JlYXRlVHJhY2luZyA9IChcbiAgbWV0cmljOiBzdHJpbmcsXG4gIHRyYWNpbmdDb25maWc/OiBSZXF1ZXN0VHJhY2luZ0NvbmZpZ1xuKSA9PiAoe1xuICByZXF1ZXN0U3Bhbk5hbWVTdWZmaXg6IG1ldHJpYyxcbiAgLi4udHJhY2luZ0NvbmZpZz8udHJhY2luZyxcbn0pXG4iXX0=

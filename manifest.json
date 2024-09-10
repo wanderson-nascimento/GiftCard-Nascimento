@@ -1,0 +1,40 @@
+{
+  "name": "giftcard-protocol-example",
+  "vendor": "paymentsptas",
+  "version": "0.3.0",
+  "title": "Gift Card Protocol Example",
+  "description": "Reference app for Gift Card Protocol Services",
+  "mustUpdateAt": "2018-01-04",
+  "categories": [],
+  "dependencies": {
+    "vtex.docs-graphql": "0.x",
+    "vtex.graphql-server": "1.x",
+    "infra:service-node": "6.x"
+  },
+  "builders": {
+    "node": "6.x",
+    "graphql": "1.x",
+    "docs": "0.x"
+  },
+  "scripts": {},
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/api/giftcardproviders/*"
+      }
+    },
+    {
+      "name": "colossus-write-logs"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema",
+  "_buildFeatures": {
+    "vtex.docs-graphql": [
+      "build.json",
+      "build.json"
+    ]
+  }
+}

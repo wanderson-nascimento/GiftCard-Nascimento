@@ -1,0 +1,46 @@
+{
+    "memory": 512,
+    "routes": {
+        "__graphql": {
+            "path": "/_v/graphql"
+        },
+        "list": {
+            "path": "/my-provider/giftcards/_search",
+            "public": true
+        },
+        "create": {
+            "path": "/my-provider/giftcards",
+            "public": true
+        },
+        "get": {
+            "path": "/my-provider/giftcards/:id/",
+            "public": true
+        },
+        "transactions": {
+            "path": "/my-provider/giftcards/:giftCardId/transactions",
+            "public": true
+        },
+        "getTransaction": {
+            "path": "/my-provider/giftcards/:giftCardId/transactions/:id/",
+            "public": true
+        },
+        "authorization": {
+            "path": "/my-provider/giftcards/:giftCardId/transactions/:id/authorization",
+            "public": true
+        },
+        "cancellation": {
+            "path": "/my-provider/giftcards/:giftCardId/transactions/:id/cancellations",
+            "public": true
+        },
+        "settlement": {
+            "path": "/my-provider/giftcards/:giftCardId/transactions/:id/settlements",
+            "public": true
+        }
+    },
+    "timeout": 300,
+    "ttl": 43200,
+    "stack": "nodejs",
+    "runtimeArgs": [
+        "--max_old_space_size=409"
+    ]
+}
