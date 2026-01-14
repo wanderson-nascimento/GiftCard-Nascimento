@@ -1,13 +1,13 @@
 type Query {
-  getGiftCardProviders: [GiftCardProvider]
+  getGiftCardProviders: [GiftCardProvider] @auth(scope: PUBLIC)
 }
 
 type Mutation {
   setGiftCardProvider(
     id: String
     giftCardProvInput: GiftCardProviderInput
-  ): GiftCardProviderResponse
-  deleteGiftCardProvider(id: String): GiftCardProviderResponse
+  ): GiftCardProviderResponse @auth(scope: PUBLIC)
+  deleteGiftCardProvider(id: String): GiftCardProviderResponse @auth(scope: PUBLIC)
 }
 
 type GiftCardProvider {
