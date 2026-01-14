@@ -13,7 +13,7 @@
             "public": true
         },
         "get": {
-            "path": "/my-provider/giftcards/:id/",
+            "path": "/my-provider/giftcards/:giftCardId",
             "public": true
         },
         "transactions": {
@@ -21,19 +21,19 @@
             "public": true
         },
         "getTransaction": {
-            "path": "/my-provider/giftcards/:giftCardId/transactions/:id/",
+            "path": "/my-provider/giftcards/:giftCardId/transactions/:transactionId",
             "public": true
         },
         "authorization": {
-            "path": "/my-provider/giftcards/:giftCardId/transactions/:id/authorization",
+            "path": "/my-provider/giftcards/:giftCardId/transactions/:transactionId/authorization",
             "public": true
         },
         "cancellation": {
-            "path": "/my-provider/giftcards/:giftCardId/transactions/:id/cancellations",
+            "path": "/my-provider/giftcards/:giftCardId/transactions/:transactionId/cancellations",
             "public": true
         },
         "settlement": {
-            "path": "/my-provider/giftcards/:giftCardId/transactions/:id/settlements",
+            "path": "/my-provider/giftcards/:giftCardId/transactions/:transactionId/settlements",
             "public": true
         }
     },

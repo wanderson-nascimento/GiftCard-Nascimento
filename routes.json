@@ -41,7 +41,7 @@
     "releasedAt": 1677590797218
   },
   "get": {
-    "path": "/my-provider/giftcards/:id/",
+    "path": "/my-provider/giftcards/:giftCardId",
     "public": true,
     "version": "0.1.0",
     "releasedAt": 1677590797218
@@ -53,25 +53,25 @@
     "releasedAt": 1677590797218
   },
   "getTransaction": {
-    "path": "/my-provider/giftcards/:giftCardId/transactions/:id/",
+    "path": "/my-provider/giftcards/:giftCardId/transactions/:transactionId",
     "public": true,
     "version": "0.1.0",
     "releasedAt": 1677590797218
   },
   "authorization": {
-    "path": "/my-provider/giftcards/:giftCardId/transactions/:id/authorization",
+    "path": "/my-provider/giftcards/:giftCardId/transactions/:transactionId/authorization",
     "public": true,
     "version": "0.1.0",
     "releasedAt": 1677590797218
   },
   "cancellation": {
-    "path": "/my-provider/giftcards/:giftCardId/transactions/:id/cancellations",
+    "path": "/my-provider/giftcards/:giftCardId/transactions/:transactionId/cancellations",
     "public": true,
     "version": "0.1.0",
     "releasedAt": 1677590797218
   },
   "settlement": {
-    "path": "/my-provider/giftcards/:giftCardId/transactions/:id/settlements",
+    "path": "/my-provider/giftcards/:giftCardId/transactions/:transactionId/settlements",
     "public": true,
     "version": "0.1.0",
     "releasedAt": 1677590797218
