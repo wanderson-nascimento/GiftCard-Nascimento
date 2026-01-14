@@ -87,9 +87,9 @@ export class GiftCardProvider extends ExternalClient {
         caption: body.caption,
         emissionDate: '2024-07-05T14:48:00.000Z',
         expiringDate: '2030-10-10T14:48:00.000Z',
-        id: "ligiaRodolphoGlauco",
+        id: "Teste da KI: 1350973",
         provider: 'wando_card',
-        redemptionCode: 'ligiaRodolphoGlauco_123',
+        redemptionCode: 'novaKI_1350973',
         transaction: {
           href: 'appliancetheme/giftcardproviders/wandoTest',
         },

@@ -49,23 +49,23 @@ const authMiddleware = async (ctx: Context, next: () => Promise<any>) => {
   // Extrai 'appkey' e 'apptoken' dos headers
 
   console.log(ctx.request.headers)
-  const appKey = ctx.request.headers['x-provider-api-appkey']
-  const appToken = ctx.request.headers['x-provider-api-apptoken']
+  // const appKey = ctx.request.headers['x-provider-api-appkey']
+  // const appToken = ctx.request.headers['x-provider-api-apptoken']
 
   // Loga as chaves no console
-  console.log("Essa é a appKey:", appKey);
-  console.log("Essa é a appToken:", appToken);
+  // console.log("Essa é a appKey:", appKey);
+  // console.log("Essa é a appToken:", appToken);
 
   // Substitua 'expectedAppKey' e 'expectedAppToken' pelos valores corretos
-  const expectedAppKey = '123'
-  const expectedAppToken = '123'
+  // const expectedAppKey = 'key'
+  // const expectedAppToken = 'token'
 
   // Valida as chaves e tokens
-  if (appKey !== expectedAppKey || appToken !== expectedAppToken) {
-    ctx.response.status = 401
-    ctx.response.body = 'Unauthorized review your keys'
-    return
-  }
+  // if (appKey !== expectedAppKey || appToken !== expectedAppToken) {
+  //   ctx.response.status = 401
+  //   ctx.response.body = 'Unauthorized review your keys'
+  //   return
+  // }
 
   await next()
 }
